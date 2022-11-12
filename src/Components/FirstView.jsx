@@ -22,7 +22,9 @@ export default function FirstView() {
                 <Text>Hello! Welcome to this component!</Text>
                 <Heading>This is {"<"} Saksham Selwal {"/>"}</Heading>
                 <Text>Aspiring {"<"} Full Stack Web Developer {"/>"} from Masai School.</Text>
-                <Button variant="outline">Know more features!</Button>   
+                <a href="https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing"  target="_blank">
+                    <Button>View Resume</Button>
+                </a> 
             </Stack>
             <Image 
                 alignSelf="center"
