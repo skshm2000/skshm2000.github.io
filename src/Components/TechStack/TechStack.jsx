@@ -7,9 +7,10 @@ export default function TechStack() {
         <Stack direction="column" w="80%" m="auto" pt="8%">
             <Heading textAlign="center">Here's what I can do</Heading>
             <Stack>
-                <Image w="65%" borderRadius="45px" m="auto" src="https://flyaps.com/blog/content/images/2020/05/Frame-37-1.png"></Image>
+                
                 <Flex justify="space-around">
                     <Stack>
+                        <Heading><span className="stylerFont">frontend</span></Heading>
                         <Flex justify="left" align="center">
                             <img className="Icon" src="https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/HTML5-512.png"></img>
                             <Heading>HTML</Heading>
@@ -40,6 +41,7 @@ export default function TechStack() {
                         </Flex>
                     </Stack>
                     <Stack>
+                        <Heading><span className="stylerFont">backend</span></Heading>
                         <Flex justify="left" align="center">
                             <img className="Icon" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/mongodb-512.png"></img>
                             <Heading>MongoDB</Heading>

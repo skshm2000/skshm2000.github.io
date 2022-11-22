@@ -3,8 +3,17 @@
     src: url("/src/Items/Kanit/Kanit-Regular.ttf");
 }
 
+@font-face {
+    font-family: headingFont;
+    src: url("/src/Items//Whoa2-1GP7j.ttf");
+}
+
 .mainText {
     font-family: mainFont;
+}
+
+.stylerFont {
+    font-family: headingFont;
 }
 
 .navbar {
@@ -17,4 +26,12 @@
 
 .Icon {
     width: 90px;
+}
+
+.bgImage {
+    position: relative;
+}
+
+.topText {
+    position: absolute;
 }

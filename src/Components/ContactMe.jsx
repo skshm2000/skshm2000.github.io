@@ -1,4 +1,5 @@
 import { Stack, Flex, Image, Text, Heading, Tooltip, Box } from "@chakra-ui/react"
+import "./CommonCSS.css"
 
 export default function ContactMe() {
     return (
@@ -18,7 +19,7 @@ export default function ContactMe() {
                 </Tooltip>
             </Flex>
             <Stack>
-                <Text textAlign="center">😎Made by SAKSHAM SELWAL</Text>
+                <Text textAlign="center">😎Made by <span className="stylerFont">saksham</span></Text>
                 <Text textAlign="center">2022</Text>
             </Stack>
         </Stack>

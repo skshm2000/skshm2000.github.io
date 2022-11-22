@@ -4,15 +4,14 @@ import "./CommonCSS.css"
 export default function FirstView() {
     return (
         <>
-        {/* <Text>src/Components/Saksham_Selwal/Welcome.jsx</Text> */}
         <Stack 
+        className='topText'
         pl="5%" 
         pr="5%" 
         pt="8%"
         direction={{base:"column", sm:"column", md:"row", lg:"row"}} 
         spacing="100px" 
         w={{base:"85%", sm:"85%", md:"95%", lg:"85%"}}
-        m="auto"
         >
             <Stack 
                 className="mainText" 
@@ -20,19 +19,20 @@ export default function FirstView() {
                 direction="column" 
             >
                 <Text>Hello! Welcome to this component!</Text>
-                <Heading>This is {"<"} Saksham Selwal {"/>"}</Heading>
-                <Text>Aspiring {"<"} Full Stack Web Developer {"/>"} from Masai School.</Text>
+                <Heading>You have reached <span className='stylerFont'>saksham selwal</span></Heading>
+                <Text>Aspiring Full Stack Web Developer.</Text>
                 <a href="https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing"  target="_blank">
-                    <Button>View Resume</Button>
+                    <Button colorScheme="blackAlpha">View Resume</Button>
                 </a> 
             </Stack>
-            <Image 
-                alignSelf="center"
-                w="40%" 
-                borderRadius="15%" 
-                src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/fcf7fd0c619bb87706533079240915f3.gif" 
-            />
         </Stack>
+        <Image 
+        classname="bgImage"
+            alignSelf="center"
+            w="100%"
+            h="600px"
+            src="https://thumbs.gfycat.com/BitesizedDesertedBallpython-size_restricted.gif" 
+        />
         </>
     )
 }
