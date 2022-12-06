@@ -1,16 +1,16 @@
 import { Stack, Flex, Image, Text, Heading } from "@chakra-ui/react"
+import { Animator, Fade, ScrollContainer, ScrollPage } from "react-scroll-motion"
 import "../CommonCSS.css"
 
 export default function TechStack() {
     return(
         <>
         <Stack direction="column" w="80%" m="auto" pt="8%">
-            <Heading textAlign="center">Here's what I can do</Heading>
+            <Text className='heading1' textAlign="center">Here's what I can do</Text>
             <Stack>
                 
                 <Flex justify="space-around">
                     <Stack>
-                        <Heading><span className="stylerFont">frontend</span></Heading>
                         <Flex justify="left" align="center">
                             <img className="Icon" src="https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/HTML5-512.png"></img>
                             <Heading>HTML</Heading>
@@ -41,7 +41,6 @@ export default function TechStack() {
                         </Flex>
                     </Stack>
                     <Stack>
-                        <Heading><span className="stylerFont">backend</span></Heading>
                         <Flex justify="left" align="center">
                             <img className="Icon" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/mongodb-512.png"></img>
                             <Heading>MongoDB</Heading>

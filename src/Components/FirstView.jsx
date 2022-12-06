@@ -3,12 +3,12 @@ import "./CommonCSS.css"
 
 export default function FirstView() {
     return (
-        <>
+        <div className='mainDiver'>
         <Stack 
         className='topText'
         pl="5%" 
         pr="5%" 
-        pt="8%"
+        pt='14%'
         direction={{base:"column", sm:"column", md:"row", lg:"row"}} 
         spacing="100px" 
         w={{base:"85%", sm:"85%", md:"95%", lg:"85%"}}
@@ -18,8 +18,7 @@ export default function FirstView() {
                 mt={{base:"30px", sm:"80px", md:"100px", lg:"110px"}} 
                 direction="column" 
             >
-                <Text>Hello! Welcome to this component!</Text>
-                <Heading>You have reached <span className='stylerFont'>saksham selwal</span></Heading>
+                <Heading>You have reached <span className='stylerFont'>{"<"}Saksham Selwal{"/>"}</span></Heading>
                 <Text>Aspiring Full Stack Web Developer.</Text>
                 <a href="https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing"  target="_blank">
                     <Button colorScheme="blackAlpha">View Resume</Button>
@@ -27,12 +26,12 @@ export default function FirstView() {
             </Stack>
         </Stack>
         <Image 
-        classname="bgImage"
+            classname="bgImage"
             alignSelf="center"
             w="100%"
-            h="600px"
+            h="640px"
             src="https://thumbs.gfycat.com/BitesizedDesertedBallpython-size_restricted.gif" 
         />
-        </>
+        </div>
     )
 }

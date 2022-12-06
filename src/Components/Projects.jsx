@@ -8,7 +8,7 @@ export default function Projects() {
     return (
         <>
         <Stack direction="column" w="80%" m="auto" pt="8%">
-            <Heading textAlign="center">Projects</Heading>
+            <Text textAlign="center" className='heading1'>Projects</Text>
             <SimpleGrid columns="2" spacing="10px">
                 <Project1 />
                 <Project4 />

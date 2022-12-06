@@ -5,7 +5,17 @@
 
 @font-face {
     font-family: headingFont;
-    src: url("/src/Items//Whoa2-1GP7j.ttf");
+    src: url("/src/Items/Caveat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: heading2;
+    src: url("/src/Items/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+.heading1{
+    font-family: heading2;
+    font-size: 40px;
 }
 
 .mainText {
@@ -14,9 +24,19 @@
 
 .stylerFont {
     font-family: headingFont;
+    font-size: 40px;
 }
 
 .navbar {
+    font-family: mainFont;
+    top:0;
+    position: sticky;
+    z-index: 100;
+    background-color: transparent;    
+}
+
+.navbar1 {
+    font-family: mainFont;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     top:0;
     position: sticky;
@@ -30,6 +50,10 @@
 
 .bgImage {
     position: relative;
+}
+
+.mainDiver {
+    margin-top: -100px;
 }
 
 .topText {

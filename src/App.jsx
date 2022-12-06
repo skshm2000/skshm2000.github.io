@@ -9,6 +9,7 @@ import { Button } from '@chakra-ui/react'
 import { Stack } from "@chakra-ui/react"
 import { Heading } from "@chakra-ui/react"
 import { useRef } from 'react';
+import { useState } from 'react';
 
 function App() {
   let aboutSection = useRef(null)
@@ -16,7 +17,7 @@ function App() {
   let techStack = useRef(null)
   let contactMe = useRef(null)
   let projects = useRef(null)
-
+  let [color, changeColor] = useState(false)
 
   const handleScrollTo = (ref) => {
     window.scrollTo({
@@ -25,20 +26,26 @@ function App() {
     });
   };
 
+  const handleScroll = ()=>{
+    if(window.scrollY>180){
+      changeColor(true)
+    } else {
+      changeColor(false)
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll)
 
   return (
     <>
-      <Flex className="mainText navbar" pt="20px" pb="20px" alignContent="center" w="100%">
+      <Flex className={color ? "navbar1":"navbar"} pt="20px" pb="20px" alignContent="center" w="100%">
           <Box w={{base:"30%",sm:"40%", md:"40%", lg:"45%"}}>
-          <Heading fontSize={{base:"15px",sm:"20px", md:"25px", lg:"30px"}} textAlign="center"> <span className='stylerFont'>saksham selwal</span></Heading>
+          <Heading fontSize={{base:"15px",sm:"20px", md:"25px", lg:"30px"}} textAlign="center"> <span className='stylerFont'>{"<"} Saksham Selwal {"/>"}</span></Heading>
           </Box>
           <Spacer></Spacer>
           <Stack direction="row" w={{base:"65%", sm:"60%", md:"40%", lg:"45%"}} spacing={{base:"10px", sm:"10px", md:"20px", lg:"40px"}}>
               <Button variant='ghost' onClick={()=>handleScrollTo(firstView)}>Home</Button>
               <Button variant='ghost' onClick={()=>handleScrollTo(aboutSection)}>About</Button>
-              <a href="https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing"  target="_blank">
-                  <Button variant='ghost'>Resume</Button>
-              </a> 
               <Button variant='ghost' onClick={()=>handleScrollTo(techStack)}>Tech Stack</Button>
               <Button variant='ghost' onClick={()=>handleScrollTo(projects)}>Projects</Button>
               <Button variant='ghost' onClick={()=>handleScrollTo(contactMe)}>Contact</Button>

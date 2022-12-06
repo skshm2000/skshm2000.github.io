@@ -5,7 +5,7 @@ export default function ContactMe() {
     return (
         <>
         <Stack direction="column" w="80%" m="auto" pt="8%" spacing="30px">
-            <Heading textAlign="center">Contact Me</Heading>
+            <Text textAlign="center" className='heading1'>Contact Me</Text>
             <Text textAlign="center" fontSize="20px">You can contact me at the places mentioned below. <br /> I will try to get back to you as fast as I can.</Text>
             <Flex justifyContent="space-around" w="80%" alignSelf="center">
                 <Tooltip label="+91 9467299188">
@@ -19,7 +19,7 @@ export default function ContactMe() {
                 </Tooltip>
             </Flex>
             <Stack>
-                <Text textAlign="center">😎Made by <span className="stylerFont">saksham</span></Text>
+                <Text textAlign="center">😎Made by <span className="stylerFont">Saksham</span></Text>
                 <Text textAlign="center">2022</Text>
             </Stack>
         </Stack>
