@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.3.5",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -15,6 +16,7 @@
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.3.4",
+    "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
     "react-scroll-motion": "^0.3.2",
     "react-type-animation": "^2.1.1",
