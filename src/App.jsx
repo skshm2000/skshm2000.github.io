@@ -4,7 +4,7 @@ import About from './Components/About';
 import TechStack from './Components/TechStack/TechStack';
 import Projects from './Components/Projects';
 import ContactMe from './Components/ContactMe';
-import {Flex, Spacer, Text, Box} from "@chakra-ui/react"
+import { Text, Box, Spacer} from "@chakra-ui/react"
 import { Button } from '@chakra-ui/react'
 import { Stack } from "@chakra-ui/react"
 import { useRef } from 'react';
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <Stack className={color ? "navbar1":"navbar"} pt="20px" pb="20px" alignContent="center" w="100%" direction={
+      <Stack className={color ? "navbar1":"navbar"} pt="10px" pb="10px" alignContent="center" w="100%" direction={
         { 
           base:'column',
           sm: 'column',
@@ -44,8 +44,8 @@ function App() {
           lg: 'row',
           xl: 'row',
           '2xl': 'row'}
-      }>
-        <Box w={{ 
+      } alignItems='center'>
+        <Box m='auto' w={{ 
           base:'65%',
           sm: '65%',
           md: '50%',
@@ -63,8 +63,7 @@ function App() {
             '2xl': '40px'}
         } textAlign="center" fontWeight={'bold'} className='stylerFont'>{"<"} Saksham Selwal {"/>"}</Text>
         </Box>
-        <Spacer></Spacer>
-        <Stack className='mainButtons' direction={['row', 'row', 'row', 'row', 'row', 'row']} w={
+        <Stack m='auto' direction='row' w={
         { 
           base:'90%',
           sm: '90%',
@@ -72,7 +71,7 @@ function App() {
           lg: '40%',
           xl: '45%',
           '2xl': '45%'}
-      } spacing={{base:"5px", sm:"5px", md:"20px", lg:"40px"}}>
+      } spacing={{base:"5px", sm:"5px", md:"20px", lg:"40px"}} justifyContent='center'>
             <Button variant='ghost' onClick={()=>handleScrollTo(firstView)}>Home</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(aboutSection)}>About</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(techStack)}>Tech Stack</Button>
