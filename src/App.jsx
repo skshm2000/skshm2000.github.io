@@ -36,7 +36,15 @@ function App() {
 
   return (
     <>
-      <Flex className={color ? "navbar1":"navbar"} pt="20px" pb="20px" alignContent="center" w="100%">
+      <Stack className={color ? "navbar1":"navbar"} pt="20px" pb="20px" alignContent="center" w="100%" direction={
+        { 
+          base:'column',
+          sm: 'column',
+          md: 'row',
+          lg: 'row',
+          xl: 'row',
+          '2xl': 'row'}
+      }>
         <Box w={{ 
           base:'65%',
           sm: '65%',
@@ -56,7 +64,15 @@ function App() {
         } textAlign="center" fontWeight={'bold'} className='stylerFont'>{"<"} Saksham Selwal {"/>"}</Text>
         </Box>
         <Spacer></Spacer>
-        <Stack className='mainButtons' direction={['column', 'column', 'row', 'row', 'row', 'row']} w={{base:"0%", sm:"60%", md:"40%", lg:"45%"}} spacing={{base:"10px", sm:"10px", md:"20px", lg:"40px"}}>
+        <Stack className='mainButtons' direction={['row', 'row', 'row', 'row', 'row', 'row']} w={
+        { 
+          base:'90%',
+          sm: '90%',
+          md: '40%',
+          lg: '40%',
+          xl: '45%',
+          '2xl': '45%'}
+      } spacing={{base:"5px", sm:"5px", md:"20px", lg:"40px"}}>
             <Button variant='ghost' onClick={()=>handleScrollTo(firstView)}>Home</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(aboutSection)}>About</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(techStack)}>Tech Stack</Button>
@@ -64,7 +80,7 @@ function App() {
             <Button variant='ghost' onClick={()=>handleScrollTo(contactMe)}>Contact</Button>
         </Stack>
         <Spacer></Spacer>
-      </Flex>
+      </Stack>
       <Box ref={firstView}>
         <FirstView/>
       </Box>

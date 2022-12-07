@@ -96,11 +96,21 @@ export default function TechStack() {
                             lg: 'row',
                             xl: 'row',
                             '2xl': 'row'}}>
-                            <img className="Icon" src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/node-js-512.png"></img>
-                            <Heading>NodeJS</Heading>
+                            <img className="Icon" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/python-512.png"></img>
+                            <Heading>Python</Heading>
                         </Stack>
                     </Stack>
                     <Stack>
+                        <Stack justify="left" align="center" direction={{ 
+                            base:'column',
+                            sm: 'column',
+                            md: 'row',
+                            lg: 'row',
+                            xl: 'row',
+                            '2xl': 'row'}}>
+                            <img className="Icon" src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/node-js-512.png"></img>
+                            <Heading>NodeJS</Heading>
+                        </Stack>
                         <Stack justify="left" align="center" direction={{ 
                             base:'column',
                             sm: 'column',
@@ -140,6 +150,16 @@ export default function TechStack() {
                             '2xl': 'row'}}>
                             <img className="Icon" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/netlify-512.png" alt="" />
                             <Heading>Netlify</Heading>
+                        </Stack>
+                        <Stack justify="left" align="center" direction={{ 
+                            base:'column',
+                            sm: 'column',
+                            md: 'row',
+                            lg: 'row',
+                            xl: 'row',
+                            '2xl': 'row'}}>
+                            <img className="Icon" src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/node-js-512.png"></img>
+                            <Heading>ExpressJS</Heading>
                         </Stack>
                     </Stack>
                 </Flex>
