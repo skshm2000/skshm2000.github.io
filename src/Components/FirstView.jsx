@@ -15,17 +15,10 @@ export default function FirstView() {
         >
             <Stack 
                 className="mainText" 
-                // m={{ 
-                //     base:'auto',
-                //     sm: 'auto',
-                //     md: '0',
-                //     lg: '0',
-                //     xl: '0',
-                //     '2xl': '0'}}
                 mt={{base:"270px", sm:"80px", md:"100px", lg:"110px"}} 
                 direction="column"
             >
-                <Heading textAlign={
+                <Text textAlign={
                     { 
                         base:'center',
                         sm: 'center',
@@ -33,9 +26,11 @@ export default function FirstView() {
                         lg: 'left',
                         xl: 'left',
                         '2xl': 'left'}
-                }>
-                    You have reached <span className='stylerFont'>{"<"} Saksham Selwal {"/>"}</span>
-                </Heading>
+                } 
+                fontSize={'32px'}
+                >
+                    You have reached <span className='stylerFont1'>{"<"} Saksham Selwal {"/>"}</span>
+                </Text>
                 <Text textAlign={
                     { 
                         base:'center',
@@ -48,18 +43,12 @@ export default function FirstView() {
                     Aspiring Full Stack Web Developer.
                 </Text>
                 <Button 
+                className='btn1'
                 onClick={()=>{
                     window.open('https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing')
                 }} 
                 colorScheme="blackAlpha"
                 w='45%'
-                alignSelf={{ 
-                    base:'center',
-                    sm: 'center',
-                    md: 'left',
-                    lg: 'left',
-                    xl: 'left',
-                    '2xl': 'left'}}
                 >
                     View Resume
                 </Button>
@@ -71,8 +60,8 @@ export default function FirstView() {
             w="100%"
             h={
                 { 
-                    base:'850px',
-                    sm: '850px',
+                    base:'820px',
+                    sm: '820px',
                     md: '640px',
                     lg: '640px',
                     xl: '640px',

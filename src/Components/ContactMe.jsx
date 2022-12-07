@@ -1,8 +1,10 @@
-import { Stack, Flex, Image, Text, Heading, Tooltip, Box } from "@chakra-ui/react"
+import { Stack, Flex, Box, Text, Tooltip } from "@chakra-ui/react"
 import "./CommonCSS.css"
 import { AiFillPhone, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { useToast } from '@chakra-ui/react'
 
 export default function ContactMe() {
+    const toast = useToast()
     return (
         <>
         <Stack direction="column" w={
@@ -39,20 +41,42 @@ export default function ContactMe() {
                 '2xl': '80%'}} 
                 alignSelf="center"
             >
-                <Tooltip label="+91 9467299188">
-                    <div>
+                <Tooltip label="+91 9467299188 (Click to copy)">
+                    <Box onClick={()=>{
+                        navigator.clipboard.writeText("+91 9467299188")
+                        toast({
+                            position: 'bottom-left',
+                            render: () => (
+                            <Box fontFamily={'heading2'} borderRadius={'15px'} color='white' p={3} bg='black'>
+                                Phone number copied to clipboard
+                            </Box>
+                            ),
+                        })
+                    }}>
                     <AiFillPhone size='50px' />
-                    </div>
+                    </Box>
                 </Tooltip>
-                <Tooltip label="sakshamselwal2000@gmail.com">
-                    <div>
+                <Tooltip label="sakshamselwal2000@gmail.com (Click to copy)">
+                    <Box onClick={()=>{
+                        navigator.clipboard.writeText("sakshamselwal2000@gmail.com")
+                        toast({
+                            position: 'bottom-left',
+                            render: () => (
+                            <Box fontFamily={'heading2'} borderRadius={'15px'} color='white' p={3} bg='black'>
+                                Email copied to clipboard
+                            </Box>
+                            ),
+                        })
+                    }}>
                     <AiFillMail size='50px'/>
-                    </div>
+                    </Box>
                 </Tooltip>
-                <Tooltip label="Saksham selwal">
-                    <div>
+                <Tooltip label="Saksham selwal (Click to visit)">
+                    <Box onClick={()=>{
+                        window.open('https://www.linkedin.com/in/saksham-selwal-a33708155/')
+                    }}>
                     <AiFillLinkedin size='50px'/>
-                    </div>
+                    </Box>
                 </Tooltip>
             </Flex>
             <Stack>

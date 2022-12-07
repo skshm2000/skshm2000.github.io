@@ -36,7 +36,12 @@ html,body
 
 .stylerFont1 {
     font-family: headingFont;
-    font-size: 30px;
+}
+
+.stylerFont1 {
+    font-family: headingFont;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .navbar {
@@ -82,8 +87,16 @@ html,body
     .mainText {
         font-family: mainFont;
         justify-content: center;
+        width: 69%;
         margin: auto;
         margin-top: 180px;
     }
-    
+    .stylerFont1 {
+        font-family: headingFont;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .btn1{
+        align-self: center;
+    }
 }
