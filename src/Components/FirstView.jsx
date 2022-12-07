@@ -15,14 +15,33 @@ export default function FirstView() {
         >
             <Stack 
                 className="mainText" 
-                mt={{base:"30px", sm:"80px", md:"100px", lg:"110px"}} 
-                direction="column" 
+                mt={{base:"170px", sm:"80px", md:"100px", lg:"110px"}} 
+                direction="column"
             >
-                <Heading>You have reached <span className='stylerFont'>{"<"}Saksham Selwal{"/>"}</span></Heading>
-                <Text>Aspiring Full Stack Web Developer.</Text>
-                <a href="https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing"  target="_blank">
-                    <Button colorScheme="blackAlpha">View Resume</Button>
-                </a> 
+                <Heading textAlign={
+                    { 
+                        base:'center',
+                        sm: 'center',
+                        md: 'left',
+                        lg: 'left',
+                        xl: 'left',
+                        '2xl': 'left'}
+                }>You have reached <span className='stylerFont'>{"<"}Saksham Selwal{"/>"}</span></Heading>
+                <Text textAlign={
+                    { 
+                        base:'center',
+                        sm: 'center',
+                        md: 'left',
+                        lg: 'left',
+                        xl: 'left',
+                        '2xl': 'left'}
+                }>Aspiring Full Stack Web Developer.</Text>
+                <Button onClick={()=>{
+                    window.open('https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing')
+                }} 
+                colorScheme="blackAlpha"
+                w='50%'
+                >View Resume</Button>
             </Stack>
         </Stack>
         <Image 

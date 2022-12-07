@@ -73,5 +73,16 @@ html,body
 }
 
 @media all and (min-width:0px) and (max-width:480px){
+    .bgImage {
+        position: relative;
+    }
+    .mainDiver {
+        margin-top: -115px;
+    }
+    .mainText {
+        font-family: mainFont;
+        justify-content: center;
+        margin: auto;
+    }
     
 }
