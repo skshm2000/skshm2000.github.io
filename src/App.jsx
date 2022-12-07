@@ -7,14 +7,6 @@ import ContactMe from './Components/ContactMe';
 import {Flex, Spacer, Text, Box} from "@chakra-ui/react"
 import { Button } from '@chakra-ui/react'
 import { Stack } from "@chakra-ui/react"
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  IconButton
-} from '@chakra-ui/react'
-import {HamburgerIcon} from '@chakra-ui/icons'
 import { useRef } from 'react';
 import { useState } from 'react';
 
