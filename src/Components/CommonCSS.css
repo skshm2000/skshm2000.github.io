@@ -83,6 +83,7 @@ html,body
         font-family: mainFont;
         justify-content: center;
         margin: auto;
+        margin-top: 180px;
     }
     
 }
