@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9c212f4.css",
-    "main.js": "/static/js/main.7e0bce16.js",
+    "main.css": "/static/css/main.94ef3247.css",
+    "main.js": "/static/js/main.461e9139.js",
     "static/js/787.343e137a.chunk.js": "/static/js/787.343e137a.chunk.js",
     "static/media/Caveat-VariableFont_wght.ttf": "/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
     "static/media/Kanit-Regular.ttf": "/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
     "static/media/SpaceGrotesk-VariableFont_wght.ttf": "/static/media/SpaceGrotesk-VariableFont_wght.1036357b9651eff7d3dd.ttf",
     "index.html": "/index.html",
-    "main.e9c212f4.css.map": "/static/css/main.e9c212f4.css.map",
-    "main.7e0bce16.js.map": "/static/js/main.7e0bce16.js.map",
+    "main.94ef3247.css.map": "/static/css/main.94ef3247.css.map",
+    "main.461e9139.js.map": "/static/js/main.461e9139.js.map",
     "787.343e137a.chunk.js.map": "/static/js/787.343e137a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9c212f4.css",
-    "static/js/main.7e0bce16.js"
+    "static/css/main.94ef3247.css",
+    "static/js/main.461e9139.js"
   ]
 }
