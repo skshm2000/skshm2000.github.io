@@ -1,5 +1,6 @@
 import { Image, Button, Stack, Box, Heading, Text } from '@chakra-ui/react'
 import "./CommonCSS.css"
+import { motion } from 'framer-motion'
 
 export default function FirstView() {
     return (
@@ -13,6 +14,18 @@ export default function FirstView() {
         spacing="100px" 
         w={{base:"100%", sm:"85%", md:"95%", lg:"100%"}}
         >
+            <motion.div
+            
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+            transition={
+                {
+                    type:'spring',
+                    bounce:0.5,
+                    duration:4
+                }
+            }
+            >
             <Stack 
                 className="mainText" 
                 mt={{base:"270px", sm:"80px", md:"100px", lg:"110px"}} 
@@ -29,7 +42,8 @@ export default function FirstView() {
                 } 
                 fontSize={'32px'}
                 >
-                    You have reached <span className='stylerFont1'>{"<"} Saksham Selwal {"/>"}</span>
+                    You have reached <motion.div whileHover={{scale:1.18, rotate:-4}}
+          whileTap={{scale:0.9}} className='stylerFont1'>{"<"} Saksham Selwal {"/>"}</motion.div>
                 </Text>
                 <Text textAlign={
                     { 
@@ -53,6 +67,7 @@ export default function FirstView() {
                     View Resume
                 </Button>
             </Stack>
+            </motion.div>
         </Stack>
         <Image 
             classname="bgImage"

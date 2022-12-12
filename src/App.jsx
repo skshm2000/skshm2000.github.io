@@ -9,6 +9,7 @@ import { Button } from '@chakra-ui/react'
 import { Stack } from "@chakra-ui/react"
 import { useRef } from 'react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 function App() {
   let aboutSection = useRef(null)
@@ -35,7 +36,17 @@ function App() {
   window.addEventListener('scroll', handleScroll)
 
   return (
-    <>
+    <motion.div
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={
+        {
+            type:'spring',
+            bounce:0.5,
+            duration:4
+        }
+    }
+    >
       <Stack className={color ? "navbar1":"navbar"} pt="10px" pb="10px" alignContent="center" w="100%" direction={
         { 
           base:'column',
@@ -53,6 +64,10 @@ function App() {
           xl: '45%',
           '2xl': '45%'}}
         >
+          <motion.div
+          whileHover={{scale:1.18, rotate:-4}}
+          whileTap={{scale:0.9}}
+          >
         <Text fontSize={
           { 
             base:'25px',
@@ -62,6 +77,7 @@ function App() {
             xl: '40px',
             '2xl': '40px'}
         } textAlign="center" fontWeight={'bold'} className='stylerFont'>{"<"} Saksham Selwal {"/>"}</Text>
+          </motion.div>
         </Box>
         <Stack m='auto' direction='row' w={
         { 
@@ -95,7 +111,7 @@ function App() {
       <Box ref={contactMe}>
         <ContactMe />
       </Box>
-    </>
+    </motion.div>
   );
 }
 

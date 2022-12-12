@@ -2,6 +2,7 @@ import { Image, Flex, Heading, Stack, Text, Spacer, Box } from "@chakra-ui/react
 import { TypeAnimation } from 'react-type-animation';
 import GitHubCalendar from 'react-github-calendar';
 import './CommonCSS.css'
+import { motion } from "framer-motion";
 
 // { 
 // base:'',
@@ -114,7 +115,13 @@ export default function About() {
                 </Stack>
             </Stack>
                 <Stack spacing='20px'>
-                    <Text className='heading1'>Github Stats</Text>
+                    <Text className='heading1' fontSize={{ 
+                base:'35px',
+                sm: '35px',
+                md: '40px',
+                lg: '40px',
+                xl: '40px',
+                '2xl': '40px'}}>Github Stats</Text>
                     <Stack w="fit-content" alignSelf="center" spacing='20px'>
                         <Box alignSelf='center'>
                             <GitHubCalendar username="skshm2000" tooltips='true' responsive='true' />
@@ -127,23 +134,57 @@ export default function About() {
                             lg: 'row',
                             xl: 'row',
                             '2xl': 'row'}}
+                        >   
+                        <motion.div
+                        initial={{opacity:0}}
+                        whileInView={{opacity:1}}
+                        transition={
+                            {
+                                type:'spring',
+                                bounce:0.5,
+                                duration:4
+                            }
+                        }
                         >
                             <Image
                                 w={"100%"}
                                 src="https://github-readme-streak-stats.herokuapp.com/?user=skshm2000&theme=dark"
                                 alt="skshm2000"
                             />
+                        </motion.div>
+                        <motion.div
+                        initial={{opacity:0}}
+                        whileInView={{opacity:1}}
+                        transition={
+                            {
+                                type:'spring',
+                                bounce:0.5,
+                                duration:5
+                            }
+                        }>
                             <Image
-                                w="100%"
+                                w="110%"
                                 src="https://github-readme-stats.vercel.app/api/top-langs?username=skshm2000&show_icons=true&locale=en&layout=compact&theme=dark"
                                 alt="Saksham Selwal"
                             />
+                        </motion.div>
                         </Stack>
+                        <motion.div
+                        initial={{opacity:0}}
+                        whileInView={{opacity:1}}
+                        transition={
+                            {
+                                type:'spring',
+                                bounce:0.5,
+                                duration:6
+                            }
+                        }>
                         <Image
                             w="100%"
                             src="https://github-readme-stats.vercel.app/api?username=skshm2000&show_icons=true&locale=en&theme=dark"
                             alt="skshm2000"
                         />
+                        </motion.div>
                         </Stack>
                     </Stack>
                 </Stack>

@@ -22,20 +22,40 @@ html,body
 }
 
 
+
 .heading1{
     font-family: heading2;
 }
 
+.heading1:hover{
+    cursor: default;
+}
+
+
+
 .mainText {
     font-family: mainFont;
+}
+
+.mainText:hover{
+    cursor: default;
 }
 
 .stylerFont {
     font-family: headingFont;
 }
 
+.stylerFont:hover{
+    cursor: default;
+}
+
+.stylerFont1:hover{
+    cursor: default;
+}
+
 .stylerFont1 {
     font-family: headingFont;
+    display: inline;
 }
 
 .stylerFont1 {

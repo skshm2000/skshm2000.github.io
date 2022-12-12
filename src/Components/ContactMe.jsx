@@ -2,6 +2,7 @@ import { Stack, Flex, Box, Text, Tooltip } from "@chakra-ui/react"
 import "./CommonCSS.css"
 import { AiFillPhone, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { useToast } from '@chakra-ui/react'
+import { motion } from "framer-motion";
 
 export default function ContactMe() {
     const toast = useToast()
@@ -53,7 +54,13 @@ export default function ContactMe() {
                             ),
                         })
                     }}>
+                        <motion.div
+                        whileHover={{scale:1.4}}
+                        whileTap={{scale:0.9}}
+                        >
+
                     <AiFillPhone size='50px' />
+                        </motion.div>
                     </Box>
                 </Tooltip>
                 <Tooltip label="sakshamselwal2000@gmail.com (Click to copy)">
@@ -68,14 +75,24 @@ export default function ContactMe() {
                             ),
                         })
                     }}>
-                    <AiFillMail size='50px'/>
+                        <motion.div
+                        whileHover={{scale:1.4}}
+                        whileTap={{scale:0.9}}
+                        >
+                            <AiFillMail size='50px'/>
+                        </motion.div>
                     </Box>
                 </Tooltip>
                 <Tooltip label="Saksham selwal (Click to visit)">
                     <Box onClick={()=>{
                         window.open('https://www.linkedin.com/in/saksham-selwal-a33708155/')
                     }}>
-                    <AiFillLinkedin size='50px'/>
+                        <motion.div
+                        whileHover={{scale:1.4}}
+                        whileTap={{scale:0.9}}
+                        >
+                            <AiFillLinkedin size='50px'/>
+                        </motion.div>
                     </Box>
                 </Tooltip>
             </Flex>

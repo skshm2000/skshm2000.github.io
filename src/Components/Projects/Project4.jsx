@@ -1,11 +1,24 @@
 import { Stack, Image, Text, Heading, Button, Flex, Spacer } from "@chakra-ui/react"
+import { motion } from "framer-motion"
 
 export default function Project4() {
     return (
-        <>
-        <Stack p="5%" border="1px solid black" borderRadius="20px" spacing="20px" >
+        <motion.div
+        whileHover={{scale:1.1}}
+        whileTap={{scale:0.9}}
+        initial={{x:90}}
+        whileInView={{x:0}}
+        transition={
+            {
+                type:'spring',
+                bounce:0.3,
+                duration:2
+            }
+        }
+        >
+        <Stack p="5%" border="1px solid black" borderRadius="20px" spacing="20px" backgroundColor={'white'}>
             <Image src="https://i.imgur.com/REt1FqT.png" mb="19px"></Image>
-            <Heading fontSize="22px">tMetric - CLONE</Heading>
+            <Heading fontSize="22px">FiveMetric - Time Tracking WebApp</Heading>
             <Text>Simple time tracking app for Windows, Mac, Linux which helps you to control your time, increase productivity, and monitor your team performance.</Text>
             <Heading textAlign="center" fontSize="19px">Tech Stack</Heading>
             <Text textAlign="center">REACT | EXPRESSJS | REDUX | JAVASCRIPT | CHAKRAUI | AXIOS | GITHUB</Text>
@@ -21,6 +34,6 @@ export default function Project4() {
                 <Spacer></Spacer>
             </Flex>
         </Stack>
-        </>
+        </motion.div>
     )
 }
