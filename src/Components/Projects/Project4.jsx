@@ -1,18 +1,26 @@
 import { Stack, Image, Text, Heading, Button, Flex, Spacer } from "@chakra-ui/react"
 import { motion } from "framer-motion"
+import useWindowSize from "../useWindowSize"
 
 export default function Project4() {
+    let size = useWindowSize()
+
     return (
         <motion.div
         whileHover={{scale:1.1}}
         whileTap={{scale:0.9}}
-        initial={{x:90}}
-        whileInView={{x:0}}
+        initial={{x:size.innerWidth>480?-90:0, opacity:size.innerWidth>480?1:0}}
+        whileInView={{x:0, opacity:size.innerWidth>480?1:1}}
         transition={
+            size.innerWidth>480?
             {
                 type:'spring',
-                bounce:0.3,
-                duration:2
+                bounce:0.5,
+                duration:1.5
+            }:
+            {
+                type:'easein',
+                duration:0.8
             }
         }
         >

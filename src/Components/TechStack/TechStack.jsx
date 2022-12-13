@@ -1,8 +1,12 @@
 import { Stack, Flex, Image, Text, Heading } from "@chakra-ui/react"
 import {motion} from 'framer-motion'
 import "../CommonCSS.css"
+import { useState, useEffect } from "react";
+import useWindowSize from "../useWindowSize";
 
 export default function TechStack() {
+    const windowSize = useWindowSize()
+
     return(
         <>
         <Stack direction="column" 
@@ -32,7 +36,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -57,7 +61,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -81,7 +85,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -105,7 +109,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -129,7 +133,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -153,7 +157,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -177,7 +181,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -201,7 +205,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -225,7 +229,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -249,7 +253,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -273,7 +277,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? -250:-40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -295,11 +299,16 @@ export default function TechStack() {
                             </Stack>
                         </motion.div>
                     </Stack>
+
+
+                    {/* BACKEND */}
+
+
                     <Stack>
                     <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:-250}}
+                        initial={{x:windowSize.innerWidth>480 ? 250:40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -323,7 +332,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:250}}
+                        initial={{x:windowSize.innerWidth>480 ? 250:40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -347,7 +356,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:250}}
+                        initial={{x:windowSize.innerWidth>480 ? 250:40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -371,7 +380,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:250}}
+                        initial={{x:windowSize.innerWidth>480 ? 250:40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -395,7 +404,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:250}}
+                        initial={{x:windowSize.innerWidth>480 ? 250:40}}
                         whileInView={{x:0}}
                         transition={
                             {
@@ -419,7 +428,7 @@ export default function TechStack() {
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
-                        initial={{x:250}}
+                        initial={{x:windowSize.innerWidth>480 ? 250:40}}
                         whileInView={{x:0}}
                         transition={
                             {

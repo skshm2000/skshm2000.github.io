@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 // xl: '',
 // '2xl': ''}
 
+
 export default function About() {
     return (
         <>
