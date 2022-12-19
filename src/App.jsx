@@ -92,6 +92,7 @@ function App() {
             <Button variant='ghost' onClick={()=>handleScrollTo(techStack)}>Tech Stack</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(projects)}>Projects</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(contactMe)}>Contact</Button>
+            <Button variant='ghost' onClick={()=>window.open('https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing')}>Resume</Button>
         </Stack>
         <Spacer></Spacer>
       </Stack>
