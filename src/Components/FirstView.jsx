@@ -1,10 +1,13 @@
 import { Image, Button, Stack, Box, Heading, Text } from '@chakra-ui/react'
 import "./CommonCSS.css"
 import { motion } from 'framer-motion'
+import useWindowSize from './useWindowSize'
 
 export default function FirstView() {
+    let size = useWindowSize()
+
     return (
-        <div className='mainDiver'>
+        <Box className='mainDiver' h={size.innerHeight}>
         <Stack 
         className='topText'
         pl="5%" 
@@ -73,17 +76,9 @@ export default function FirstView() {
             classname="bgImage"
             alignSelf="center"
             w="100%"
-            h={
-                { 
-                    base:'820px',
-                    sm: '820px',
-                    md: '640px',
-                    lg: '640px',
-                    xl: '640px',
-                    '2xl': '640px'}
-            }
+            h={size.innerHeight}
             src="https://thumbs.gfycat.com/BitesizedDesertedBallpython-size_restricted.gif" 
         />
-        </div>
+        </Box>
     )
 }

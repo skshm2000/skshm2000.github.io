@@ -1,4 +1,4 @@
-import { Stack, Flex, Box, Text, Tooltip } from "@chakra-ui/react"
+import { Stack, Flex, Box, Text, Tooltip, Image } from "@chakra-ui/react"
 import "./CommonCSS.css"
 import { AiFillPhone, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { useToast } from '@chakra-ui/react'
@@ -97,7 +97,8 @@ export default function ContactMe() {
                 </Tooltip>
             </Flex>
             <Stack>
-                <Text textAlign="center">Made by <span className="stylerFont1">Saksham</span></Text>
+                <Text 
+                textAlign="center">Made by <span className="stylerFont1">Saksham </span></Text>
                 <Text textAlign="center">2022</Text>
             </Stack>
         </Stack>

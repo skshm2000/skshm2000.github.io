@@ -10,6 +10,7 @@ import { Stack } from "@chakra-ui/react"
 import { useRef } from 'react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import useWindowSize from './Components/useWindowSize';
 
 function App() {
   let aboutSection = useRef(null)

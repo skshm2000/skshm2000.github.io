@@ -126,7 +126,7 @@ export default function TechStack() {
                                 lg: 'row',
                                 xl: 'row',
                                 '2xl': 'row'}}>
-                                <img className="Icon" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/language_typescript_icon_136460.png"></img>
+                                <img className="Icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png"></img>
                                 <Heading>TypeScript</Heading>
                             </Stack>
                         </motion.div>
