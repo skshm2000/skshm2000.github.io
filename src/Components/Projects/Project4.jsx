@@ -32,7 +32,7 @@ export default function Project4() {
             <Text textAlign="center">REACT | EXPRESSJS | REDUX | CHAKRAUI | AXIOS | GITHUB</Text>
             <Flex alignSelf="center" w="50%">
                 <Spacer></Spacer>
-                <a href="https://five-metric.netlify.app/" target="_blank">
+                <a href="https://five-metric.vercel.app/" target="_blank">
                     <Button variant='solid'>Deployed</Button>    
                 </a>    
                 <Spacer></Spacer>
