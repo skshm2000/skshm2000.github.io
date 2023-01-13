@@ -34,7 +34,7 @@ export default function Project2() {
             </Text>
             <Flex alignSelf="center" w="50%">
             <Spacer></Spacer>
-                <a href="https://spectacular-syrniki-f45532.netlify.app/" target="_blank">
+                <a href="https://silly-ink-340.vercel.app/" target="_blank">
                     <Button variant='solid'>Deployed</Button>
                 </a>
                 <Spacer></Spacer>

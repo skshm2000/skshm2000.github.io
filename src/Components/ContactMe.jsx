@@ -1,6 +1,6 @@
 import { Stack, Flex, Box, Text, Tooltip, Image } from "@chakra-ui/react"
 import "./CommonCSS.css"
-import { AiFillPhone, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { AiFillPhone, AiFillLinkedin, AiFillMail, AiOutlineGithub } from "react-icons/ai";
 import { useToast } from '@chakra-ui/react'
 import { motion } from "framer-motion";
 
@@ -83,7 +83,7 @@ export default function ContactMe() {
                         </motion.div>
                     </Box>
                 </Tooltip>
-                <Tooltip label="Saksham selwal (Click to visit)">
+                <Tooltip label="Saksham Selwal (Click to visit)">
                     <Box onClick={()=>{
                         window.open('https://www.linkedin.com/in/saksham-selwal-a33708155/')
                     }}>
@@ -92,6 +92,18 @@ export default function ContactMe() {
                         whileTap={{scale:0.9}}
                         >
                             <AiFillLinkedin size='50px'/>
+                        </motion.div>
+                    </Box>
+                </Tooltip>
+                <Tooltip label="Saksham Selwal (Click to visit)">
+                    <Box onClick={()=>{
+                        window.open('https://github.com/skshm2000')
+                    }}>
+                        <motion.div
+                        whileHover={{scale:1.4}}
+                        whileTap={{scale:0.9}}
+                        >
+                            <AiOutlineGithub size='50px'/>
                         </motion.div>
                     </Box>
                 </Tooltip>

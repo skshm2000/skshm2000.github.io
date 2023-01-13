@@ -32,7 +32,7 @@ export default function Project1() {
             <Text textAlign="center" >REACT | HTML/CSS | JAVASCRIPT | CHAKRAUI | REACT ROUTER DOM | AXIOS | GITHUB</Text>
             <Flex alignSelf="center" w="50%">
             <Spacer></Spacer>
-                <a href="https://the-great-skshm2000-site.netlify.app/" target="_blank">
+                <a href="https://farfetch-lac.vercel.app/" target="_blank">
                     <Button variant='solid'>Deployed</Button>
                 </a>
                 <Spacer></Spacer>

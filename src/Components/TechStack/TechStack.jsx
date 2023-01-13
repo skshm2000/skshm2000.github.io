@@ -222,7 +222,7 @@ export default function TechStack() {
                                 lg: 'row',
                                 xl: 'row',
                                 '2xl': 'row'}}>
-                                <img className="Icon" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/material_ui_icon_137419.png"></img>
+                                <img className="Icon" src="https://i.imgur.com/Kj3WpxX.png"></img>
                                 <Heading>Material UI</Heading>
                             </Stack>
                         </motion.div>
