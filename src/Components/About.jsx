@@ -100,7 +100,7 @@ export default function About() {
                     </Stack>
                     <Spacer></Spacer>
                     <Image 
-                    src="https://i.imgur.com/Pl7KcRd.jpg"
+                    src='https://i.imgur.com/AK6gkIa.jpg'
                     w={
                         { 
                             base:'50%',
@@ -110,7 +110,7 @@ export default function About() {
                             xl: '28%',
                             '2xl': '28%'}
                     }
-                    borderRadius="20%"
+                    borderRadius="50px"
                     alignSelf={'center'}
                     />
                 </Stack>
