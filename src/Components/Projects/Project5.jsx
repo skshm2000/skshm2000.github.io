@@ -27,11 +27,11 @@ export default function Project5() {
         >
         <Stack p="5%" border="1px solid black" borderRadius="20px" spacing="20px" backgroundColor={'white'} >
             <Image src="https://i.imgur.com/ro3xBl1.png"></Image>
-            <Heading fontSize="22px">CHARGENOW - Realtime Bulk Emailer</Heading>
-            <Text>Charge Now is a bulk mailing web service where user can create a mailing list and send mails to all all of those emails with just one click, with realtime status for mails sent.</Text>
+            <Heading fontSize="22px" pt='7px'>CHARGENOW - Realtime Bulk Emailer</Heading>
+            <Text pb='25px'>Charge Now is a bulk mailing web service where user can create a mailing list and send mails to all all of those emails with just one click, with realtime status for mails sent.</Text>
             <Heading textAlign="center" fontSize="19px">Tech Stack</Heading>
             <Text textAlign="center">NEXT JS | EXPRESS JS | NODEMAILER | SOCKET.IO | JWT | MONGODB | REDUX | JAVASCRIPT | CHAKRAUI | AXIOS | GITHUB</Text>
-            <Flex alignSelf="center" w="50%">
+            <Flex alignSelf="center" w="50%" pt='10px'>
                 <Spacer></Spacer>
                 <a href="https://abandoned-reaction-8426-dhamisir.vercel.app/" target="_blank">
                     <Button variant='solid'>Deployed</Button>    

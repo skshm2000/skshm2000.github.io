@@ -1,8 +1,8 @@
 import {Flex,Image, Heading, Stack, SimpleGrid, Text} from "@chakra-ui/react"
 import Project1 from "./Projects/Project1"
-import Project2 from "./Projects/Project2"
 import Project5 from "./Projects/Project5"
 import Project4 from "./Projects/Project4"
+import Project6 from "./Projects/Project6"
 
 export default function Projects() {
     return (
@@ -30,10 +30,10 @@ export default function Projects() {
             lg: '2',
             xl: '2',
             '2xl': '2'}} spacing="10px">
+                <Project6 />
                 <Project5 />
                 <Project1 />
                 <Project4 />
-                <Project2 />
             </SimpleGrid>
         </Stack>
         </>

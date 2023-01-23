@@ -2,7 +2,7 @@ import { Stack, Image, Text, Heading, Button, Flex, Spacer } from "@chakra-ui/re
 import { motion } from "framer-motion"
 import useWindowSize from "../useWindowSize"
 
-export default function Project4() {
+export default function Project6() {
     let size = useWindowSize()
 
     return (
@@ -24,19 +24,19 @@ export default function Project4() {
             }
         }
         >
-        <Stack p="5%" border="1px solid black" borderRadius="20px" spacing="20px" backgroundColor={'white'}>
-            <Image src="https://i.imgur.com/REt1FqT.png" mb="19px"></Image>
-            <Heading fontSize="22px">FiveMetric - Time Tracking WebApp</Heading>
-            <Text>Simple time tracking app for Windows, Mac, Linux which helps you to control your time, increase productivity, and monitor your team performance.</Text>
+        <Stack p="5%" border="1px solid black" borderRadius="20px" spacing="25px" backgroundColor={'white'}>
+            <Image src="https://i.imgur.com/ywR4v3s.png"></Image>
+            <Heading fontSize="22px">NEXTIN - Productivity focused webapp</Heading>
+            <Text>NextIn is a productivity focused webapp where you can create a chatroom for your team. Along with the chatting application of this app the the team leader can also assign you tasks and its status can be changed and tracked.</Text>
             <Heading textAlign="center" fontSize="19px">Tech Stack</Heading>
-            <Text textAlign="center">REACT | EXPRESSJS | REDUX | CHAKRAUI | AXIOS | GITHUB</Text>
-            <Flex alignSelf="center" w="50%" py='11px'>
+            <Text textAlign="center" >NEXTJS | EXPRESSJS | NODEJS | JAVASCRIPT | MONGODB | SOCKET.IO | CHAKRAUI | REDUX</Text>
+            <Flex alignSelf="center" w="50%">
+            <Spacer></Spacer>
+                <a href="https://next-in-three.vercel.app/" target="_blank">
+                    <Button variant='solid'>Deployed</Button>
+                </a>
                 <Spacer></Spacer>
-                <a href="https://five-metric.vercel.app/" target="_blank">
-                    <Button variant='solid'>Deployed</Button>    
-                </a>    
-                <Spacer></Spacer>
-                <a href="https://github.com/skshm2000/powerful-nut-6425" target="_blank">
+                <a href="https://github.com/Dhamisir/next-in" target="_blank">
                     <Button variant='solid'>Codebase</Button>
                 </a>
                 <Spacer></Spacer>
