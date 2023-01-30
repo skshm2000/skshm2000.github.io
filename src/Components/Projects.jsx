@@ -3,11 +3,16 @@ import Project1 from "./Projects/Project1"
 import Project5 from "./Projects/Project5"
 import Project4 from "./Projects/Project4"
 import Project6 from "./Projects/Project6"
+import { useSelector } from "react-redux"
 
 export default function Projects() {
+    const { current } = useSelector(state=>state)
     return (
         <>
-        <Stack direction="column" w={
+        <Stack direction="column" 
+        bgColor={ current=='dark' ? 'black' : 'white'  }
+        color={ current=='dark' ? 'white' : 'black'  }
+        w={
             { 
                 base:'95%',
                 sm: '95%',

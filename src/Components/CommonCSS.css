@@ -31,8 +31,6 @@ html,body
     cursor: default;
 }
 
-
-
 .mainText {
     font-family: mainFont;
 }
@@ -60,7 +58,7 @@ html,body
 
 .stylerFont1 {
     font-family: headingFont;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -69,7 +67,6 @@ html,body
     top:0;
     position: sticky;
     z-index: 100;
-    background-color: transparent;    
 }
 
 .navbar1 {
@@ -78,7 +75,6 @@ html,body
     top:0;
     position: sticky;
     z-index: 100;
-    background-color: white;    
 }
 
 .Icon {

@@ -1,10 +1,11 @@
 import { Stack, Image, Text, Heading, Button, Flex, Spacer } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import useWindowSize from "../useWindowSize"
-
+import { useSelector } from "react-redux"
 
 export default function Project3() {
     let size = useWindowSize()
+    const { current } = useSelector(state=>state)
 
     return (
         <motion.div
@@ -25,7 +26,10 @@ export default function Project3() {
             }
         }
         >
-        <Stack p="5%" border="1px solid black" borderRadius="20px" spacing="20px" backgroundColor={'white'} >
+        <Stack 
+        bgColor={ current=='dark' ? 'black' : 'white'  }
+        color={ current=='dark' ? 'white' : 'black'  }
+        p="5%" border={ current=='dark' ? '3px solid white' : '1px solid black'  } borderRadius="20px" spacing="20px">
             <Image src="https://i.imgur.com/fmNQmGG.png"></Image>
             <Heading fontSize="22px">FITNESSBLENDER - Online Fitness Solutions</Heading>
             <Text>Choose from hundreds of workouts, healthy recipes, relaxing meditations, and expert articles, for a whole body and mind approach to feeling great.</Text>
@@ -34,11 +38,11 @@ export default function Project3() {
             <Flex alignSelf="center" w="50%">
                 <Spacer></Spacer>
                 <a href="https://coruscating-churros-2b31ea.netlify.app/" target="_blank">
-                    <Button variant='solid'>Deployed</Button>    
+                    <Button colorScheme={ current=='dark' ? 'whiteAlpha':"blackAlpha"} >Deployed</Button>    
                 </a>    
                 <Spacer></Spacer>
                 <a href="https://github.com/skshm2000/melted-group-7444" target="_blank">
-                    <Button variant='solid'>Codebase</Button>
+                    <Button colorScheme={ current=='dark' ? 'whiteAlpha':"blackAlpha"} >Codebase</Button>
                 </a>
                 <Spacer></Spacer>
             </Flex>

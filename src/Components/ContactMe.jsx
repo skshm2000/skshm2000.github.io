@@ -3,12 +3,17 @@ import "./CommonCSS.css"
 import { AiFillPhone, AiFillLinkedin, AiFillMail, AiOutlineGithub } from "react-icons/ai";
 import { useToast } from '@chakra-ui/react'
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 export default function ContactMe() {
     const toast = useToast()
+    const { current } = useSelector(state=>state)
     return (
         <>
-        <Stack direction="column" w={
+        <Stack 
+        bgColor={ current=='dark' ? 'black' : 'white'  }
+        color={ current=='dark' ? 'white' : 'black'  }
+        direction="column" w={
             { 
                 base:'95%',
                 sm: '95%',

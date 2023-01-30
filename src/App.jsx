@@ -10,7 +10,10 @@ import { Stack } from "@chakra-ui/react"
 import { useRef } from 'react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import useWindowSize from './Components/useWindowSize';
+import { MdDarkMode } from "react-icons/md";
+import { BsLightbulb } from "react-icons/bs";
+import { useDispatch, useSelector } from 'react-redux';
+import { Switch2Dark, Switch2Light } from './Redux/actions';
 
 function App() {
   let aboutSection = useRef(null)
@@ -19,7 +22,8 @@ function App() {
   let contactMe = useRef(null)
   let projects = useRef(null)
   let [color, changeColor] = useState(false)
-  let [hidden, changeHidden] = useState(false)
+  const { current } = useSelector(state=>state)
+  const dispatch = useDispatch()
   
   const handleScroll = ()=>{
     if(window.scrollY>180){
@@ -36,6 +40,10 @@ function App() {
   window.addEventListener('scroll', handleScroll)
 
   return (
+    <Stack
+    w='100%'
+    bgColor={ current=='dark' ? 'black' : 'white'  }
+    >
     <motion.div
     initial={{opacity:0}}
     whileInView={{opacity:1}}
@@ -47,7 +55,15 @@ function App() {
         }
     }
     >
-      <Stack className={color ? "navbar1":"navbar"} pt="10px" pb="10px" alignContent="center" w="100%" direction={
+      <Stack 
+      bgColor={ color ? (current=='dark' ? 'black' : 'white') : 'transparent' } 
+      color={ current=='dark' ? 'white' : 'black' }
+      className={color ? "navbar1":"navbar"} 
+      pt="10px" 
+      pb="10px" 
+      alignContent="center" 
+      w="100%" 
+      direction={
         { 
           base:'column',
           sm: 'column',
@@ -73,9 +89,9 @@ function App() {
             base:'25px',
             sm: '25px',
             md: '35px',
-            lg: '40px',
-            xl: '40px',
-            '2xl': '40px'}
+            lg: '42px',
+            xl: '45px',
+            '2xl': '45px'}
         } textAlign="center" fontWeight={'bold'} className='stylerFont'>{"<"} Saksham Selwal {"/>"}</Text>
           </motion.div>
         </Box>
@@ -85,8 +101,8 @@ function App() {
           sm: '90%',
           md: '40%',
           lg: '40%',
-          xl: '45%',
-          '2xl': '45%'}
+          xl: '55%',
+          '2xl': '55%'}
       } spacing={{base:"5px", sm:"5px", md:"20px", lg:"40px"}} justifyContent='center'>
             <Button variant='ghost' onClick={()=>handleScrollTo(firstView)}>Home</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(aboutSection)}>About</Button>
@@ -94,6 +110,9 @@ function App() {
             <Button variant='ghost' onClick={()=>handleScrollTo(projects)}>Projects</Button>
             <Button variant='ghost' onClick={()=>handleScrollTo(contactMe)}>Contact</Button>
             <Button variant='ghost' onClick={()=>window.open('https://drive.google.com/file/d/1kKVSOq67udDMZX88g1ujntdrjIjTTzYg/view?usp=sharing')}>Resume</Button>
+            <Button variant='ghost'>
+              { current=='dark' ? <BsLightbulb onClick={()=>{dispatch(Switch2Light())}} size='l' /> : <MdDarkMode onClick={()=>{dispatch(Switch2Dark())}} size='50px' />  }
+            </Button>
         </Stack>
         <Spacer></Spacer>
       </Stack>
@@ -113,6 +132,8 @@ function App() {
         <ContactMe />
       </Box>
     </motion.div>
+
+    </Stack>
   );
 }
 

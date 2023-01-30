@@ -3,6 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import GitHubCalendar from 'react-github-calendar';
 import './CommonCSS.css'
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 // { 
 // base:'',
@@ -14,10 +15,13 @@ import { motion } from "framer-motion";
 
 
 export default function About() {
+    const { current } = useSelector(state=>state)
     return (
         <>
-        
-        <Stack  w={{ 
+        <Stack  
+        bgColor={ current=='dark' ? 'black' : 'white'  }
+        color={ current=='dark' ? 'white' : 'black'  }
+        w={{ 
         base:'100%',
         sm: '100%',
         md: '95%',

@@ -17,9 +17,11 @@
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.3.4",
     "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
     "react-scroll-motion": "^0.3.2",
     "react-type-animation": "^2.1.1",
+    "redux": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
