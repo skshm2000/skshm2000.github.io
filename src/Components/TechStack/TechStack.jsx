@@ -34,7 +34,9 @@ export default function TechStack() {
             <Stack>
                 
                 <Flex justify="space-around">
-                    <Stack>
+                    <Stack
+                    spacing='20px'
+                    >
                         <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}
@@ -306,7 +308,9 @@ export default function TechStack() {
                     {/* BACKEND */}
 
 
-                    <Stack>
+                    <Stack
+                    spacing='20px'
+                    >
                     <motion.div
                         whileHover={{scale:1.2}}
                         whileTap={{scale:0.9}}

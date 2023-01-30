@@ -1,4 +1,4 @@
-import { Image, Flex, Heading, Stack, Text, Spacer, Box } from "@chakra-ui/react"
+import { Image, Stack, Text, Spacer, Box } from "@chakra-ui/react"
 import { TypeAnimation } from 'react-type-animation';
 import GitHubCalendar from 'react-github-calendar';
 import './CommonCSS.css'
@@ -104,7 +104,7 @@ export default function About() {
                     </Stack>
                     <Spacer></Spacer>
                     <Image 
-                    src='https://i.imgur.com/AK6gkIa.jpg'
+                    src='https://i.imgur.com/byaywoI.jpg'
                     w={
                         { 
                             base:'50%',
@@ -129,7 +129,7 @@ export default function About() {
                 '2xl': '40px'}}>Github Stats</Text>
                     <Stack w="fit-content" alignSelf="center" spacing='20px'>
                         <Box alignSelf='center'>
-                            <GitHubCalendar username="skshm2000" tooltips='true' responsive='true' />
+                            <GitHubCalendar color={ current=='dark' ? 'white':'' }  username="skshm2000" tooltips='true' responsive='true' />
                         </Box>
                         <Stack>
                         <Stack direction={{ 
