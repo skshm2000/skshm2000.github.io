@@ -14,19 +14,19 @@ export default function FirstView() {
             // className='topText'
             position={'absolute'}
             top={ current=='dark' ? { 
-                base:'5vh',
+                base:'2vh',
                 sm: '35vh',
                 md: '30vh',
                 lg: '25vh',
-                xl: '25vh',
-                '2xl': '25vh'}:'25vh' }
+                xl: '28vh',
+                '2xl': '30vh'}:'25vh' }
             left={ current=='dark' ? { 
                 base:'0vw',
                 sm: '10vw',
                 md: '20vw',
                 lg: '25vw',
-                xl: '30vw',
-                '2xl': '28vw'}:'4vw' }
+                xl: '28vw',
+                '2xl': '25vw'}:'4vw' }
             // pl="5%" 
             // pr="5%" 
             // pt='14%'
