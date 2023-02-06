@@ -11,7 +11,6 @@ export default function FirstView() {
     return (
         <Box className='mainDiver' h={size.innerHeight}>
         <Stack
-            // className='topText'
             position={'absolute'}
             top={ current=='dark' ? { 
                 base:'2vh',
@@ -19,20 +18,16 @@ export default function FirstView() {
                 md: '30vh',
                 lg: '25vh',
                 xl: '28vh',
-                '2xl': '30vh'}:'25vh' }
+                '2xl': '35vh'}:'25vh' }
             left={ current=='dark' ? { 
                 base:'0vw',
                 sm: '10vw',
                 md: '20vw',
                 lg: '25vw',
                 xl: '28vw',
-                '2xl': '25vw'}:'4vw' }
-            // pl="5%" 
-            // pr="5%" 
-            // pt='14%'
+                '2xl': '33vw'}:'4vw' }
             direction={{base:"column", sm:"column", md:"row", lg:"row"}} 
-            // spacing="100px" 
-            w={{base:"100%", sm:"85%", md:"95%", lg:"100%"}}
+            w={{base:"100%", sm:"85%", md:"95%", lg:"100%", xl:'100%', '2xl':'100%'}}
             color={ current=='dark' ? 'white' : 'dark'  }
         >
             <motion.div
